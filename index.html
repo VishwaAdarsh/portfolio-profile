@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile | Portfolio</title>
+    <meta name="description" content="Professional Personal Profile and Portfolio">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="adarsh.png.jpeg" class="logo">Adarsh<span style="color: var(--primary-color);">.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#documents" class="nav-link">Documents</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    🌙
+                </button>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="tagline">Hello, I'm</span>
+                <h1>Adarsh vishwakarma
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">Software Engineer & AI Generalist
+                    </h3>
+                    <p>I build modern, accessible, and high-performance digital experiences. Passionate about clean code
+                        and
+                        user-centric design.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+            </div>
+            <div class="hero-image-container">
+                <!-- Placeholder for generated image -->
+                <!-- <img src="assets/images/profile-placeholder.jpg" alt="Profile Photo" class="profile-img"> -->
+                <div class="profile-img"
+                    style="background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white;">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="reveal">About Me</h2>
+            <div class="grid about-grid reveal">
+                <div class="about-text">
+                    <p>I am a creative technologist with a background in computer science. I love turning complex
+                        problems into simple, beautiful, and intuitive designs. My journey involves working on various
+                        web technologies and constantly learning new frameworks to stay ahead.</p>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of science in Information Technology</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Tolani college of commerce(autonomous) • 2025 -
+                            2028</p>
+                        <!-- Report Card Preview -->
+                        <div class="doc-actions">
+                            <p style="margin-top: 0.5rem;">
+                                <a href="#" target="_blank" style="color: var(--primary-color); text-decoration: none;">
+                                    <i class="fa-solid fa-eye" style="margin-right: 0.3rem;"></i>
+                                    View Report Card
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <h4>INTERMEDIATE School Diploma</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">CHHATRADHARI INTERMEDIATE COLLEGE LAKHPERA
+                            UTTARPRADESH• 2024 - 2025</p>
+                        <!-- Report Card Preview -->
+                        <div class="doc-actions">
+                            <p style="margin-top: 0.5rem;">
+                                <a href="Class 12th marksheet.pdf" target="_blank"
+                                    style="color: var(--primary-color); text-decoration: none;">
+                                    <i class="fa-solid fa-eye" style="margin-right: 0.3rem;"></i>
+                                    View Report Card
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <h4>HighSchool Diploma</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">CHHATRADHARI INTERMEDIATE COLLEGE UTTARPRADESH•
+                            2022 - 2023</p>
+                        <!-- Report Card Preview -->
+                        <div class="doc-actions">
+                            <p style="margin-top: 0.5rem;">
+                                <a href="Class 10th marksheet.pdf" target="_blank"
+                                    style="color: var(--primary-color); text-decoration: none;">
+                                    <i class="fa-solid fa-eye" style="margin-right: 0.3rem;"></i>
+                                    View Report Card
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section" style="background-color: rgba(var(--primary-color), 0.05);">
+        <div class="container">
+            <h2 class="reveal">Documents</h2>
+            <p class="reveal">Download my resume and other relevant documents.</p>
+
+            <div class="grid docs-grid reveal" style="margin-top: 2rem;">
+                <!-- Resume Card -->
+                <div class="doc-card">
+                    <i class="fa-solid fa-file-pdf doc-icon"></i>
+                    <h4>Resume / CV</h4>
+                    <p>Updated Dec 2025</p>
+                    <a href="Adarsh_Resume.pdf" class="btn btn-primary" download>Download PDF</a>
+                </div>
+                <!-- Cover Letter Card -->
+                <div class="doc-card">
+                    <i class="fa-solid fa-file-lines doc-icon"></i>
+
+                    <h4>Cover Letter</h4>
+                    <p>General Purpose</p>
+
+                    <div class="doc-actions">
+                        <!-- Preview -->
+                        <a href="Adarsh_Vishwakarma_Certificate.pdf" class="btn margin-bottom" target="_blank">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </a>
+
+                        <!-- Download -->
+                        <a href="Adarsh_Vishwakarma_Certificate.pdf" class="btn btn-primary" download>
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio PDF -->
+                <div class="doc-card">
+                    <i class="fa-solid fa-folder-open doc-icon"></i>
+                    <h4>Portfolio PDF</h4>
+                    <p>Detailed Projects</p>
+                    <a href="#" class="btn btn-primary" download>Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section" style="background-color: var(--surface-color);">
+        <div class="container">
+            <h2 class="reveal">Certifications</h2>
+            <div class="grid cert-grid reveal" style="margin-top:3rem;">
+
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-solid fa-certificate" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Full Stack Web Development</h4>
+                        <p class="cert-issuer">Udemy - 2024</p>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn margin-bottom" target="_blank">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </a>
+                        <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn btn-primary" download>
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-solid fa-certificate" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Artificial General Intelligence (AGI)</h4>
+                        <p class="cert-issuer">Outskill - 2025</p>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="Adarsh_Vishwakarma_Certificate.pdf" class="btn margin-bottom" target="_blank">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </a>
+                        <a href="Adarsh_Vishwakarma_Certificate.pdf" class="btn btn-primary" download>
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-brands fa-aws" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>AWS Cloud Practitioner</h4>
+                        <p class="cert-issuer">Amazon Web Services - 2023</p>
+                        <div class="cert-actions">
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn margin-bottom"
+                                target="_blank">
+                                <i class="fa-solid fa-eye"></i> Preview
+                            </a>
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn btn-primary" download>
+                                <i class="fa-solid fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-brands fa-google" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4> Google Gemini write-off</h4>
+                        <p class="cert-issuer">Google - 2023</p>
+                        <div class="cert-actions">
+                            <a href="Google certificate essay writing.pdf" class="btn margin-bottom" target="_blank">
+                                <i class="fa-solid fa-eye"></i> Preview
+                            </a>
+                            <a href="Google certificate essay writing.pdf" class="btn btn-primary" download>
+                                <i class="fa-solid fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-brands fa-google " style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4> Google Certified Prompt Master</h4>
+                        <p class="cert-issuer">Google - 2025</p>
+                        <div class="cert-actions">
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn margin-bottom"
+                                target="_blank">
+                                <i class="fa-solid fa-eye"></i> Preview
+                            </a>
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn btn-primary" download>
+                                <i class="fa-solid fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-preview">
+                        <i class="fa-brands fa-google " style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4> Google Certified Prompt Master</h4>
+                        <p class="cert-issuer">Google - 2025</p>
+                        <div class="cert-actions">
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn margin-bottom"
+                                target="_blank">
+                                <i class="fa-solid fa-eye"></i> Preview
+                            </a>
+                            <a href="Google Certificate_Adarsh Vishwakarma.pdf" class="btn btn-primary" download>
+                                <i class="fa-solid fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="reveal">Featured Projects</h2>
+            <div class="grid projects-grid reveal" style="margin-top: 2rem;">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-img"
+                        style="background: #e2e8f0; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-laptop-code" style="font-size: 3rem; color: #94a3b8;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>E-Commerce Dashboard</h4>
+                        <p>A comprehensive dashboard for managing online store inventory and sales analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Tailwind</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+                        <a href="e-coommerce.html" class="btn btn-outline" style="width: 100%;">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-img"
+                        style="background: #e2e8f0; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-mobile-screen" style="font-size: 3rem; color: #94a3b8;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Mobile Task App</h4>
+                        <p>A productivity application designed for mobile devices with offline capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Firebase</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-img"
+                        style="background: #e2e8f0; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-globe" style="font-size: 3rem; color: #94a3b8;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Travel Blog</h4>
+                        <p>Static generated site using markdown files for a travel blog.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Gatsby</span>
+                            <span class="tech-badge">GraphQL</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">View Details</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="reveal">Gallery</h2>
+            <div class="grid gallery-grid reveal" style="margin-top: 2rem;">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Coding Setup">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Team Meeting">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1675557009875-436f71457475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRlY2hub2xvZ3klMjBhaXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Design Sprints">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Cybersecurity">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="reveal">Get In Touch</h2>
+            <div class="contact-container reveal" style="margin-top: 2rem;">
+
+                <div class="contact-info">
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Feel free to reach out for collaborations,
+                        freelance work, or just to say hi!</p>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 0.5rem;">
+                            <i class="fa-solid fa-phone" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            Phone
+                        </h4>
+                        <p>+91 6389419672</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"
+                                style="margin-right: 0.5rem; color: var(--primary-color);"></i> Email</h4>
+                        <p>vishwakarma1917adarsh@gmail.com</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"
+                                style="margin-right: 0.5rem; color: var(--primary-color);"></i> Location</h4>
+                        <p>Mumbai, India</p>
+                    </div>
+
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="https://www.linkedin.com/in/
+vishwakarma-adarsh-b08566387" class="btn btn-outline"
+                            style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline"
+                            style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Vishwa_adars" class="btn btn-outline"
+                            style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                                class="fa-brands fa-twitter"></i>
+                            <google.com>
+                        </a>
+                        <a href="https://www.instagram.com/vishwa.adarsh?igsh=dGJ3ZnM0bHA3Mjkw" class="btn btn-outline"
+                            style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="t.me/Vishwa1917Adarsh" class="btn btn-outline"
+                            style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                                class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Adarsh vishwakarma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
