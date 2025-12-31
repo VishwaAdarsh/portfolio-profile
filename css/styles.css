@@ -170,11 +170,26 @@ p {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: bold;
     text-decoration: none;
+    color: #000;
 }
+
+.logo img {
+    width: 45px;
+    /* same width & height */
+    height: 45px;
+    border-radius: 50%;
+    /* makes it circular */
+    object-fit: cover;
+    object-position: 50% 17%;
+    /* prevents image stretch */
+}
+
 
 .nav-links {
     display: flex;
@@ -281,21 +296,24 @@ p {
 }
 
 .hero-image-container {
-    position: relative;
+    position: center;
+
     animation: fadeIn 1s ease-out 0.3s backwards;
     display: flex;
     justify-content: center;
 }
 
+
 .profile-img {
     width: 400px;
     height: 400px;
     object-fit: cover;
+    object-position: 50% 15%;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: var(--shadow);
     border: 2px solid var(--border-color);
     transition: var(--transition);
-    animation: blob 8s infinite linear;
+    animation: blob 10s infinite linear;
 }
 
 .profile-img:hover {
@@ -700,4 +718,23 @@ footer {
     cursor: pointer;
     background: none;
     border: none;
+}
+
+.map-name-bar {
+    background-color: #000;
+    color: #ffffff !important;
+    /* force pure white */
+    text-align: center;
+    text-emphasis-position: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+    opacity: 1;
+    /* remove any fading */
+}
+
+.map-name-bar * {
+    color: #ffffff !important;
+    /* fixes icon/text inside */
 }

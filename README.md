@@ -1,2 +1,0 @@
-# portfolio-profile
-personal profile
