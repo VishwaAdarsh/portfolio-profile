@@ -175,6 +175,8 @@
             }
         }
     </style>
+
+
 </head>
 
 <body>
@@ -214,15 +216,23 @@
                 <!-- Contact Info -->
                 <div class="contact-info reveal">
                     <h2 style="margin-bottom: 24px;">Get In Touch</h2>
-                    <p style="margin-bottom: 32px; color: var(--text-dark);">Call us or visit our workshop for expert
+                    <p style="margin-bottom: 32px; color: var(--text-light);">Call us or visit our workshop for expert
                         advice on your furniture needs.</p>
 
+                    <div class="contact-card">
+                        <i class="fa-solid fa-user"></i>
+                        <div>
+                            <h4> Dealers Name</h4>
+                            <p> Ram Lakhan Vishwakarma </p>
+                            <p>Guddu Vishwakarma</p>
+                        </div>
+                    </div>
                     <div class="contact-card">
                         <i class="fa-solid fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p>+91 98765 43210</p>
-                            <p>+91 12345 67890</p>
+                            <p>+91 9819215853</p>
+                            <p>+91 7021542499</p>
                         </div>
                     </div>
 
@@ -230,7 +240,8 @@
                         <i class="fa-brands fa-whatsapp"></i>
                         <div>
                             <h4>WhatsApp</h4>
-                            <p>+91 98765 43210</p>
+                            <p>+91 9819215853</p>
+                            <p>+91 7021542499</p>
                         </div>
                     </div>
 
@@ -238,8 +249,8 @@
                         <i class="fa-solid fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>contact@vishwakarma.com</p>
-                            <p>support@vishwakarma.com</p>
+                            <p>ramlakhan1775@gmail.com</p>
+                            <p>gudduvish1998@gmail.com</p>
                         </div>
                     </div>
 
@@ -247,7 +258,8 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <div>
                             <h4>Workshop Address</h4>
-                            <p>Plot No. 123, Furniture Market, Kirti Nagar, New Delhi - 110015</p>
+                            <p>405, Ashirwaad Building,AmbedkarNagar, MIDC, Road
+                                No.8,Andheri(East),Mumbai,Maharashtra-400093</p>
                         </div>
                     </div>
                 </div>
@@ -255,43 +267,62 @@
                 <!-- Contact Form -->
                 <div class="contact-form reveal">
                     <h2>Send Us a Message</h2>
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" placeholder="Enter your full name" required>
+                            <div class="carpenters-card">
+                                <label><b>Your Name</b></label>
+                                <input type="text" name="name" class="form-input" placeholder="Enter your full name"
+                                    required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="Enter your mobile number" required>
+                            <label><b>Phone number </b></label>
+                            <input type="tel" name="phone" class="form-input" placeholder="Enter your phone number "
+                                required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Type</label>
-                            <select id="service">
-                                <option value="home">Home Furniture</option>
-                                <option value="office">Office Furniture</option>
-                                <option value="aluminium">Aluminium Work</option>
-                                <option value="renovation">Renovation</option>
-                                <option value="other">Other</option>
+                            <label><b>Service Type</b></label>
+                            <select name="service" class="form-input">
+                                <option>Home Furniture</option>
+                                <option>Office Furniture</option>
+                                <option>Aluminium Work</option>
+                                <option>Renovation</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Tell us about your requirement..."></textarea>
+                            <label><b>Message</b></label>
+
+                            <textarea name="message" class="form-input" placeholder="Tell us about your requirement..."
+                                rows="6"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send
-                            Enquiry</button>
+                        <button type="submit" class="btn btn-primary">
+                            Send Enquiry
+                        </button>
+
                     </form>
+
                 </div>
             </div>
         </div>
-    </section>
+        <!-- Success Modal -->
+        <div id="successModal" class="success-modal">
+            <div class="success-box">
+                <h2>Thank You!</h2>
+                <p>Your form has been submitted successfully.</p>
+            </div>
+        </div>
 
-    <!-- Map Section (Optional) -->
+    </section>
+    <!-- map- name - bar -->
+    <div class="map-name-bar">
+        <h3 align="center ">📍 Workshop Address-Mumbai</h3>
+    </div>
+    <!-- Map Section -->
     <section class="section reveal" style="padding: 0;">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184406!2d77.1345!3d28.6517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0370f7193b2d%3A0xe54d6df1e1c72e27!2sKirti%20Nagar%20Industrial%20Area%2C%20Kirti%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110015!5e0!3m2!1sen!2sin!4v1689753456789!5m2!1sen!2sin"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe src="https://www.google.com/maps?q=19.119570127681598,72.86842454295243&z=16&output=embed" width="100%"
+            height="400" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
 
     <!-- Footer -->
@@ -324,27 +355,15 @@
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 98765 43210</li>
-                        <li><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> +91 98765 43210</li>
-                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> contact@vishwakarma.com</li>
-                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> New Delhi, India</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 9819215853
+                        </li>
+                        <li><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> +91 9819215853 </li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> ramlakhan1775@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> Andheri(E),Mumbai, India
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Search For</h4>
 
-                    <input type="text" id="footerSearch" placeholder="Search services..."
-                        style="width: 100%; padding: 8px; border-radius: 4px; border: none;">
-
-                    <ul id="footerSearchList" style="margin-top: 10px;">
-                        <li>Home Furniture</li>
-                        <li>Office Interiors</li>
-                        <li>Aluminium Work</li>
-                        <li>Renovation</li>
-                        <li>Modular Kitchen</li>
-                        <li>Wardrobe</li>
-                    </ul>
-                </div>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 Vishwakarma Furniture Works. All Rights Reserved.</p>

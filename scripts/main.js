@@ -168,5 +168,37 @@ if (toggleBtn) {
         }
     });
 }
+const scriptURL = "https://script.google.com/macros/s/AKfycbzLrbcE1nOCpPruNvNsdm06EU0KSehLvErMP3Anq6ZypbssmNxUo8Wi4HAIMSWq0ZoU/exec";
+const form = document.getElementById("contactForm");
 
+form.addEventListener("submit", e => {
+    e.preventDefault();
 
+    fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form)
+    })
+        .then(res => res.json())
+
+        .then(data => {
+            if (data.status === "success") {
+
+                const modal = document.getElementById("successModal");
+                modal.style.display = "flex";   // show popup
+                form.reset();
+
+                // auto hide after 3 seconds
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 3000);
+
+            } else {
+                alert("Submission failed");
+            }
+        })
+
+        .catch(err => {
+            console.error(err);
+            alert("Error! Please try again");
+        });
+});
