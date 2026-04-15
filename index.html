@@ -8,11 +8,18 @@
     <link rel="icon" sizes="64x64" href="favocon logo.png">
     <meta name="description" content="Professional Personal Profile and Portfolio">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Visual Enhancement Layer -->
+    <link rel="stylesheet" href="css/enhance.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body data-theme="dark">
+
+    <!-- Cursor Glow (enhancement) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <!-- Star/particle canvas (enhancement) -->
+    <canvas class="bg-particles" id="bgParticles"></canvas>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -50,16 +57,18 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <span class="tagline">Hello, I'm</span>
-                <h1>Adarsh vishwakarma
-                    <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">Software Engineer & AI Generalist
-                    </h3>
-                    <p>I build modern, accessible, and high-performance digital experiences. Passionate about clean code
-                        and
-                        user-centric design.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Work</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    </div>
+                <h1 class="hero-title">
+                    <span class="animated-name">Adarsh vishwakarma</span>
+                </h1>
+                <h3 style="margin-bottom: 1.5rem; color: var(--text-light);">Software Engineer & AI Generalist
+                </h3>
+                <p>I build modern, accessible, and high-performance digital experiences. Passionate about clean code
+                    and
+                    user-centric design.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary magnetic-btn">View Work</a>
+                    <a href="#contact" class="btn btn-outline magnetic-btn">Contact Me</a>
+                </div>
             </div>
             <div class="hero-image-container">
                 <!-- Placeholder for generated image -->
@@ -126,19 +135,64 @@
                     </div>
                 </div>
 
-                <div class="skills-wrapper">
-                    <h2>Technical Skills</h2>
-                    <div class="skills-container">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript (ES6+)</span>
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Python</span>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="reveal">Technical Skills</h2>
+            <div class="grid skills-grid reveal" style="margin-top: 2rem;">
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-html5"></i></div>
+                    <h4>HTML5</h4>
+                    <p>Semantic markup, Canvas API, Web Components & Accessibility</p>
                 </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <h4>CSS3</h4>
+                    <p>Flexbox, Grid, Animations, Custom Properties & Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-js"></i></div>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>DOM manipulation, Async/Await, Modules & Canvas rendering</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-react"></i></div>
+                    <h4>React.js</h4>
+                    <p>Hooks, Context API, React Router & Component architecture</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-node-js"></i></div>
+                    <h4>Node.js</h4>
+                    <p>Express, REST APIs, MongoDB integration & npm ecosystem</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h4>UI/UX Design</h4>
+                    <p>Figma, Prototyping, Design Systems & Color Theory</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                    <p>Version control, GitHub workflows, Branching & Pull Requests</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fa-brands fa-python"></i></div>
+                    <h4>Python</h4>
+                    <p>Flask, Pandas, Automation scripts & AI/ML exploration</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -346,7 +400,7 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">JAVA script</span>
                         </div>
-                        <a href="index2.html" class="btn btn-outline" style="width: 100%;">View Details</a>
+                        <a href="index1.html" class="btn btn-outline" style="width: 100%;">View Details</a>
                     </div>
                 </article>
 
@@ -379,23 +433,33 @@
             <h2 class="reveal">Gallery</h2>
             <div class="grid gallery-grid reveal" style="margin-top: 2rem;">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        alt="Coding Setup">
+                    <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&auto=format&fit=crop&q=60"
+                        alt="AI Neural Network" loading="lazy">
                     <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        alt="Team Meeting">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&auto=format&fit=crop&q=60"
+                        alt="Code & Data Visualization" loading="lazy">
                     <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1675557009875-436f71457475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRlY2hub2xvZ3klMjBhaXxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Design Sprints">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&auto=format&fit=crop&q=60"
+                        alt="AI Robot Technology" loading="lazy">
                     <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        alt="Cybersecurity">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=60"
+                        alt="Circuit Board Technology" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60"
+                        alt="AI Brain Visualization" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&auto=format&fit=crop&q=60"
+                        alt="Developer Workspace" loading="lazy">
                     <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
             </div>
@@ -498,6 +562,8 @@ vishwakarma-adarsh-b08566387" class="btn btn-outline"
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- Visual Enhancement Layer -->
+    <script src="js/enhance.js"></script>
 </body>
 
 </html>
